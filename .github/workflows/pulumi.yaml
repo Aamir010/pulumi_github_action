@@ -15,3 +15,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_DEV_SECRET_ACCESS_KEY }}
           AWS_REGION: 'us-east-1'
           PULUMI_CONFIG_PASSPHRASE: ${{ secrets.PULUMI_CONFIG_PASSPHRASE }}
+          
+      - run: pulumi stack ls
