@@ -1,8 +1,9 @@
 name: Pulumi
 on:
-  push:
+  pull_request:
     branches:
       - main
+    types: [opened, synchronize]
 jobs:
   up:
     name: Update
@@ -15,6 +16,7 @@ jobs:
           stack-name: dev
           cloud-url: file://~
           upsert: true
+          comment-on-pr: true
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_DEV_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_DEV_SECRET_ACCESS_KEY }}
