@@ -13,7 +13,8 @@ jobs:
         with:
           command: preview
           stack-name: dev
-          cloud-url: s3://aws-logs-563410562074-us-east-1
+          cloud-url: file://~
+          upsert: true
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_DEV_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_DEV_SECRET_ACCESS_KEY }}
