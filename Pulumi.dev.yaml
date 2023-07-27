@@ -1,4 +1,4 @@
 encryptionsalt: v1:DyRifr5QjgA=:v1:l/mJUNP6dvCpzjao:6iiV7wTQiavPmEvIMWkVia3Q+4AFjA==
 config:
-  aws:profile: hr-dev
+  # aws:profile: hr-dev
   aws:region: us-east-1
