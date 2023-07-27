@@ -13,6 +13,7 @@ jobs:
       - uses: pulumi/actions@v3
         with:
           command: preview
+          diff: true
           stack-name: dev
           cloud-url: file://~
           upsert: true
